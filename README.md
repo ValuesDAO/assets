@@ -15,9 +15,9 @@ Such a large collection can be maintained only through a community effort, so _f
 ## Adding an ERC20 token checklist:
 - [ ] Make sure your smartcontract has more than 2,500 address holders, otherwise you will be rejected
 - [ ] Fork the Github repository
-- [ ] Create folder with name of token smartcontact address in [_checksum format_](https://ethsum.netlify.app/) `blockchains/ethereum/assets/<token_smartcontract_address>/`.
+- [ ] Create folder with name of token smartcontact address in lowercase format.
 - [ ] Tell your designer that token image must be in PNG format, avoid transparent background, recommended size 256x256px, max. 512x512px, with max file size of 100kB. Please us [Image Optim](https://imageoptim.com/mac) or similar on larger files.
-- [ ] Upload your logo with file named `logo.png` to previously created folder with smartcontract address, and if you done all correctly your path should look like this. `blockchains/ethereum/assets/0x1234567461d3f8Db7496581774Bd869C83D51c93/logo.png`
+- [ ] Upload your logo with file named `logo.png` to previously created folder with smartcontract address, and if you done all correctly your path should look like this. `blockchains/ethereum/assets/0x1234567461d3f8db7496581774bd869c83d51c93/logo.png`
 - [ ] Create `info.json` file with info about the token/project
 - [ ] Create a pull request to the main repo
 
@@ -28,9 +28,9 @@ There are several scripts available for maintainers:
 - `make check` -- Execute validation checks; also used in continuous integration.
 - `make fix` -- Perform automatic fixes where possible
 - `make update-auto` -- Run automatic updates from external sources, executed regularly (GitHub action)
-- `make add-token asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53` -- Create `info.json` file as asset template.
-- `make add-tokenlist asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53` -- Adds a token to tokenlist.json.
-- `make add-tokenlist-extended asset_id=c60_t0x4Fabb145d64652a948d72533023f6E7A623C7C53` -- Adds a token to tokenlist-extended.json.
+- `make add-token asset_id=c60_t0x1234567461d3f8db7496581774bd869c83d51c93` -- Create `info.json` file as asset template.
+- `make add-tokenlist asset_id=c60_t0x1234567461d3f8db7496581774bd869c83d51c93` -- Adds a token to tokenlist.json.
+- `make add-tokenlist-extended asset_id=c60_t0x1234567461d3f8db7496581774bd869c83d51c93` -- Adds a token to tokenlist-extended.json.
 
 ## On Checks
 
